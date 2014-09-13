@@ -1,0 +1,14 @@
+server {
+<% if sn = node["monit-graph"]["server_name"] || node["fqdn"] -%>
+  server_name <%= sn %>
+<% end -%>
+  listen <%= node["monit-graph"]["port"] %>;
+  root <%= node["monit-graph"]["install_dir"] %>;
+  index index.php index.html index.htm;
+  location ~ \.php$ {
+    fastcgi_pass unix:<%= node["monit-graph"]["php-fpm_socket"] %>;
+    fastcgi_index index.php;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include fastcgi_params;
+  }
+}

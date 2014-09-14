@@ -40,10 +40,10 @@ Attributes
     <td><tt>/var/run/php-fpm-www.sock</tt></td>
   </tr>
   <tr>
-    <td><tt>["monit-graph"]["nginx_conf_dir"]</tt></td>
+    <td><tt>["monit-graph"]["nginx_home"]</tt></td>
     <td>String</td>
-    <td>The path to Nginx configuration file</td>
-    <td><tt>/etc/nginx/conf.d</tt></td>
+    <td>The path to Nginx home</td>
+    <td><tt>/etc/nginx</tt></td>
   </tr>
   <tr>
     <td><tt>["monit-graph"]["server"]</tt></td>

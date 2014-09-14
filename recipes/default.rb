@@ -4,6 +4,7 @@ mg_home = "#{install_dir}/monit-graph"
 directory install_dir do
   owner "root"
   group "root"
+  recursive true
   mode 0755
 end
 

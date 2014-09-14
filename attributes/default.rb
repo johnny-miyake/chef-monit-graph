@@ -1,5 +1,5 @@
 default["monit-graph"]["server_name"] = nil
-default["monit-graph"]["port"] = "80"
+default["monit-graph"]["port"] = "8080"
 default["monit-graph"]["install_dir"] = "/var/www/cgi-bin"
 default["monit-graph"]["php-fpm_socket"] = "/var/run/php-fpm-www.sock"
 default["monit-graph"]["nginx_home"] = "/etc/nginx"

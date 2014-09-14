@@ -25,7 +25,7 @@ Attributes
     <td><tt>["monit-graph"]["port"]</tt></td>
     <td>String</td>
     <td>The port number which monit-graph listens</td>
-    <td><tt>80</tt></td>
+    <td><tt>8080</tt></td>
   </tr>
   <tr>
     <td><tt>["monit-graph"]["install_dir"]</tt></td>

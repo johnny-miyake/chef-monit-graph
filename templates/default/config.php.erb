@@ -32,6 +32,7 @@
  * @copyright Dan Schultzer
  */
 
+  umask(<%= node["monit-graph"]["umask"] %>);
   /* Monit login information */
   $server_configs = array(
     <% node['monit-graph']['servers'].each_with_index do |server, idx| -%>

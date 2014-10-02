@@ -3,6 +3,7 @@ default["monit-graph"]["port"] = "8080"
 default["monit-graph"]["install_dir"] = "/var/www/cgi-bin"
 default["monit-graph"]["php-fpm_socket"] = "/var/run/php-fpm-www.sock"
 default["monit-graph"]["nginx_home"] = "/etc/nginx"
+default["monit-graph"]["umask"] = "002"
 default["monit-graph"]["servers"] = [
   {
     "name" => "Localhost",

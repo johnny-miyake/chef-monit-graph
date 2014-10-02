@@ -20,7 +20,7 @@ template "#{mg_home}/config.php" do
   source "config.php.erb"
 end
 
-execute "chmod 777 #{mg_home}/data"
+execute "chmod 2777 #{mg_home}/data"
 
 execute "chmod 644 #{mg_home}/data/index.php"
 
